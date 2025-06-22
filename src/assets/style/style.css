@@ -1,0 +1,206 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap'); */
+*{
+    font-family: "montserrat";
+    font-weight: 400;
+    font-style: normal;
+    color: #495057;
+}
+
+.table {
+    --bs-table-color: #0b2d57!important;
+    --bs-table-bg: transparent!important;
+}
+.table thead{
+    background-color: #ff5204f0!important;
+
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; Prevent scrolling */
+}
+
+.banner{
+    background-image: url('../banner7.jpg');
+    height:646px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-text{
+    font-size: 22px;
+    line-height: 29px;
+    font-family: montserrat;
+}
+.text-orange{
+    color: #ff5204f0!important;
+}
+.bg-primary{
+    background-color: #ff5204f0!important;
+}
+a.router-link-active.router-link-exact-active{
+    color: #ff5204f0!important;
+}
+.authbtn, .primarybtn{
+    background: #ff5204f0!important;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.authbtn{
+    width: 100px;
+    height: 29px;
+}
+
+.text-xs{
+    font-size: 13px!important;
+}
+.eye_icon{
+    right: 4px;
+    top: 38px;
+}
+.text-sm{
+    font-size: 14px;
+}
+.auth-page{
+    background-image: url('../authbanner.jpg');
+    height:646px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.form-box{
+    background: rgb(255 255 255 / 24%);
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    backdrop-filter: blur( 4px );
+}
+.select2-selection{
+    border-color: transparent!important;
+    box-shadow: none!important;
+}
+.book-appointment-section, .filter-navbar{
+    background: #ccdbfa;
+    /* min-height: 400px; */
+}
+.filter-navbar{
+    z-index:9999
+}
+.accordion-button {
+    width: 252px!important
+}
+.doctor.border.p-2.mb-2 {
+    height: 236px;
+}
+.filter-select {
+    width: 240px!important
+}
+.auth-page::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #ccdbfa;
+    opacity: 0.6;
+}
+
+
+.admin-maincontent{
+    padding: 48px 46px;
+
+}
+
+.dp__input {
+    font-size:13px!important;
+    padding: 0px 4px!important;
+    border:1px solid #767676!important;
+}
+
+.dp__input_icon {
+    top: 3%!important;
+    right: -7px!important;
+    transform: translate(154px, 0px)!important;
+    height:13px!important;
+
+}
+.dp__clear_icon{
+    display: none!important;
+}
+
+.dp--tp-wrap {
+    display: none !important;
+}
+
+/* .edit-profilepic{
+    font-size: 20px;
+    background: #ccdbfa;
+    padding: 10px;
+    border-radius: 50%;
+    opacity: 1;   
+    top: -26px !important;
+    right: -9px;
+    z-index: 999;
+} */
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+
+
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #0b2d57;
+    background: #073d7ff7;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    transition: all 0.3s;
+    background: #ccdbfa;
+
+    /* display: flex;
+    align-items: center; */
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
